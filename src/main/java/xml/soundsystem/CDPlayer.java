@@ -1,18 +1,18 @@
 package xml.soundsystem;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 
 public class CDPlayer implements MediaPlayer {
-    private CompactDisc compactDisc;
+    private CompactDisc cd;
 
-    @Autowired
-    public void setCompactDisc(CompactDisc compactDisc){
-        this.compactDisc = compactDisc;
+
+    public CDPlayer(CompactDisc cd) {
+        this.cd = cd;
     }
 
-
     public void play() {
-        compactDisc.play();
+        cd.play();
     }
 }

@@ -14,10 +14,4 @@
         <value>Sgt. Pepper's Lonely hearts Club Band</value>
         <value>Fixing a Hole</value>
     </util:list>
-
-    <bean id="cdPlayer" class="xml.soundsystem.CDPlayer"
-          p:compactDisc-ref="compactDisk"/>
-
-
-
 </beans>
