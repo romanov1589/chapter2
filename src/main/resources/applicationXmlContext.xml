@@ -16,6 +16,7 @@
         </constructor-arg>
     </bean>
 
-    <bean id="cdPlayer" class="xml.soundsystem.CDPlayer"
-          c:compactDisc-ref="compactDisc"/>
+    <bean id="cdPlayer" class="xml.soundsystem.CDPlayer">
+          <property name="compactDisc" ref="compactDisc"/>
+    </bean>
 </beans>

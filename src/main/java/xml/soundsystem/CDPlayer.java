@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class CDPlayer implements MediaPlayer {
     private CompactDisc compactDisc;
 
-
-    public CDPlayer(CompactDisc compactDisc){
+    @Autowired
+    public void setCompactDisc(CompactDisc compactDisc){
         this.compactDisc = compactDisc;
     }
 
